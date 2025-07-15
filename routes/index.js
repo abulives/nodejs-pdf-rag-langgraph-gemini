@@ -23,7 +23,7 @@ router.post('/upload_files', upload.array('files'), async function (req, res, ne
 router.post('/ask_question', async function (req, res, next) {
   try {
     const { question } = req.body;
-    let result = await geminiService.askQuestions(question, req.query);
+    let result = await geminiService.askQuestions(question);
     result.response = result.response.replace(/```json/g, '').replace(/```/g, '').trim();
     return res.send(result);
   } catch (error) {
