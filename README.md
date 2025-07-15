@@ -1,4 +1,4 @@
-# 🚀 Build a PDF ingestion and Question/Answering system with LangChain and gemini
+# 🚀 Build a Retrieval Augmented Generation (RAG) App with Langgraph and gemini
 
 This is a Dockerized Node.js application built using the [Express.js](https://expressjs.com/) framework.
 
